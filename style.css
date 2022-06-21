@@ -41,6 +41,8 @@ header {
 header .logo {
     position: relative;
     max-width: 150px;
+    right: 100px;
+    top: -40px;
 }
 
 header .navigation {
