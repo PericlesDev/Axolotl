@@ -98,3 +98,39 @@ header .navigation li a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.links {
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    display: inline-block;
+    margin-left: 15px;
+    background: #222; /* talvez eu tire */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.links li a:hover {
+    background-color: #e51e2a;
+    transform: translateY(-10px);
+}
+
+.links li a img {
+    filter: invert(1);
+    transform: scale(0.5);
+}
