@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.cartao {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cartao:hover {
+    width: 600px;
+    transition-delay: 0s;
+}
+
+.cartao .circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cartao .circulo::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: var(--clr);
+   clip-path: circle(120px at center);
+   transition: 0.5s;
+}
+
+.cartao:hover .circulo::before {
+   clip-path: circle(400px at center);
+}
+
+.cartao .circulo .Logo {
+   position: relative;
+   width: 200px;
+   transition: 0.5s;
+   transition-delay: 0.5s;
+}
+
+.cartao:hover .circulo .Logo {
+    transform: scale(0);
+    transition: 0s;
+}
+
+.conteudo {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.cartao:hover .conteudo {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+
+}
