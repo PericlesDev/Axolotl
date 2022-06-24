@@ -14,7 +14,7 @@ section {
     padding: 100px;
     justify-content: space-between;
     align-items: center;
-    background: #161616;
+    background: #3e88dd;
 }
 
 section .circulo {
@@ -23,7 +23,7 @@ section .circulo {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e51e2a;
+    background: #df858b;
     clip-path: circle(70% at right -20%);
 }
 
