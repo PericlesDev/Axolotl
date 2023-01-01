@@ -7,62 +7,75 @@
     font-family: 'Poppins', sans-serif;
 }
 
-section {
+body {
+    background: #4B9093;
+}
+
+iframe {
+    border: 5px solid #ffffff;
+}
+
+main {
     position: relative;
     width: 100%;
     min-height: 100vh;
     padding: 100px;
     justify-content: space-between;
     align-items: center;
-    background: #3e88dd;
+   
 }
 
-section .circulo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #df858b;
-    clip-path: circle(70% at right -20%);
-}
+
+
 
 header {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
+.logo {
     position: relative;
     max-width: 150px;
     right: 100px;
     top: -40px;
+    border-radius: 50%;
+    transform: scale(0.5);
+    
 }
+
 
 header .navigation {
     position: relative;
     display: flex;
+    top: -40px;
 }
 
 header .navigation li {
     list-style: none;
+    border-radius: 40px;
 }
 
 header .navigation li a {
     display: inline-block;
-    color: #fff;
+    color: #fff;   
     font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 40px;  
+    transition: 0.2s ease-in-out; 
+}
+header .navigation li a:hover {
+    transform: scale(1.5);
+    color: #7FFFD4;
 }
 
-.conteudo {
+section {
+    margin-top: 60px;
     position: relative;
     width: 100%;
     display: flex;
@@ -70,27 +83,28 @@ header .navigation li a {
     align-items: center;
 }
 
-.conteudo .texto {
+section article {
    position: relative;
    max-width: 600px;
    margin-right: 20px;
 }
 
-.conteudo .texto h2 {
-    color: #fff;
+section article h2 {
+    color: #f9f9f9;
     font-size: 3em;
     margin-bottom: 10px;
     line-height: 1.4em;
     font-weight: 700;
 }
 
-.conteudo .texto p {
+section article p {
     color: #fff;
 }
 
-.conteudo .texto a {
+section article a {
     display: inline-block;
     margin-top: 20px;
+    margin-left: 300px; /* button */
     padding: 8px 20px;
     background: #e51e2a;
     color: #fff;
@@ -99,6 +113,10 @@ header .navigation li a {
     letter-spacing: 1px;
     text-decoration: none;
     cursor: pointer;
+}
+section article a:hover {
+    border: 3px solid #7FFFD4;
+    transform: scale(1.1);
 }
 
 .links {
@@ -117,7 +135,7 @@ header .navigation li a {
 .links li a {
     display: inline-block;
     margin-left: 15px;
-    background: #222; /* talvez eu tire */
+    border: 1px solid black;
     width: 50px;
     height: 50px;
     display: flex;
@@ -125,14 +143,15 @@ header .navigation li a {
     align-items: center;
     border-radius: 50%;
     transition: 0.2s ease-in-out;
+
 }
 
 .links li a:hover {
-    background-color: #e51e2a;
+    background-color: #7FFFD4;
     transform: translateY(-10px);
 }
 
 .links li a img {
-    filter: invert(1);
+    width: 100%;
     transform: scale(0.5);
 }
