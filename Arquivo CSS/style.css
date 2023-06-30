@@ -126,6 +126,7 @@ section article a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .55s ease;
 }
 
 .links li {
