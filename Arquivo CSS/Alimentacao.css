@@ -7,12 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #4B9093;
 
-    //background-image: url("../Imagens/oceano.jpg");
-    background-position: 80% 40%;
-    background-size: cover;
+body {
+    background-color: #83E1AD;
 }
 
 iframe {
@@ -27,55 +24,6 @@ main {
     justify-content: space-between;
     align-items: center;
    
-}
-
-
-
-
-header {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    position: relative;
-    max-width: 150px;
-    right: 100px;
-    top: -40px;
-    border-radius: 50%;
-    transform: scale(0.5);
-    
-}
-
-
-header .navigation {
-    position: relative;
-    display: flex;
-    top: -40px;
-}
-
-header .navigation li {
-    list-style: none;
-    border-radius: 40px;
-}
-
-header .navigation li a {
-    display: inline-block;
-    color: #fff;   
-    font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;  
-    transition: 0.2s ease-in-out; 
-}
-header .navigation li a:hover {
-    transform: scale(1.5);
-    color: #7FFFD4;
 }
 
 section {

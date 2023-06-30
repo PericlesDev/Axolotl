@@ -30,42 +30,11 @@ nav > a {
 }
 
 
-header {
+h1 {
     text-align: center;
-    min-height: 150px;
-    background: #063d13;
-    font-family: 'Arial', sans-serif;
-}
-
-header > h1 {
-    padding-top: 40px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 3em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
-    font-weight: normal;
-}
-
-header > p {
-    text-align: center;
-    padding: 10px;
-    color: gray;
-    font-size: 1.2em;
-    max-width: 500px;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: #f1f1f1;
-    margin: 5px;
-}
-
-#h1 {
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     padding: 10px;
 }
 
